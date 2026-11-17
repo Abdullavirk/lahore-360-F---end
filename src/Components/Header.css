@@ -1,0 +1,93 @@
+.header-design {
+     /* min-height: 500px; */
+  background: linear-gradient(
+    180deg,
+    #fff8f4 0%,
+    #6e3535 100%
+  );
+}
+
+
+.hero {
+  text-align: center;
+  padding: 85px 20px 65px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: #222;
+}
+
+.hero p {
+  margin-top: 18px;
+  font-size: 19px;
+  color: #777;
+}
+
+
+/* =========================
+   EXPLORE LAHORE
+========================= */
+
+.explore-section {
+  text-align: center;
+  padding: 65px 20px;
+}
+
+.explore-section h2 {
+  margin: 0;
+  font-size: 30px;
+  color: #222;
+}
+
+.explore-text {
+  margin-top: 10px;
+  color: #e5e8e5;
+  font-size: 15px;
+}
+
+
+/* Area Dropdown */
+
+.area-select-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  margin: 28px auto 0;
+}
+
+.location-icon {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 19px;
+ 
+}
+
+.area-select {
+  width: 100%;
+  height: 55px;
+  padding: 0 45px;
+  border: 1px solid #dddddd;
+  border-radius: 12px;
+  background-color: white;
+  color: #444;
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+  appearance: auto;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.area-select:hover {
+  border-color: #f26b38;
+}
+
+.area-select:focus {
+  border-color: #f26b38;
+  box-shadow: 0 0 0 3px rgba(242, 107, 56, 0.12);
+}

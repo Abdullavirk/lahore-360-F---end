@@ -1,0 +1,158 @@
+.application-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: #fff8f4;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.application-card {
+  width: 100%;
+  max-width: 650px;
+  padding: 55px 50px;
+  background: #ffffff;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 15px 45px rgba(113, 60, 60, 0.12);
+}
+
+
+/* =========================
+   SUCCESS ICON
+========================= */
+
+.success-icon {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  background: #e9f8ef;
+
+  color: #198754;
+  font-size: 48px;
+
+  box-shadow: 0 8px 25px rgba(25, 135, 84, 0.12);
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.application-card h1 {
+  margin: 0 0 18px;
+
+  color: #713c3c;
+
+  font-size: 32px;
+  font-weight: 800;
+}
+
+
+/* =========================
+   PARAGRAPH
+========================= */
+
+.application-card p {
+  margin: 0 auto;
+
+  max-width: 560px;
+
+  color: #777;
+
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+
+/* =========================
+   REVIEW STATUS
+========================= */
+
+.review-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-top: 28px;
+  padding: 11px 18px;
+
+  border-radius: 30px;
+
+  background: #fff8f4;
+
+  color: #a53505;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.review-status span {
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  background: #f0a500;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.back-home-btn {
+  margin-top: 30px;
+
+  padding: 13px 28px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #a53505;
+  color: white;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.back-home-btn:hover {
+  background: #713c3c;
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+  .application-card {
+    padding: 40px 25px;
+  }
+
+  .application-card h1 {
+    font-size: 26px;
+  }
+
+  .application-card p {
+    font-size: 14px;
+  }
+
+}

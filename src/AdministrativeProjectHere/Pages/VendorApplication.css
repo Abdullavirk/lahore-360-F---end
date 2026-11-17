@@ -1,0 +1,375 @@
+.vendor-applications-page {
+  width: 100%;
+  min-width: 0;
+  color: #1e293b;
+}
+
+.application-page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.application-eyebrow {
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 1.3px;
+}
+
+.application-page-header h1 {
+  margin: 8px 0;
+  font-size: clamp(24px, 3vw, 31px);
+  letter-spacing: -0.7px;
+}
+
+.application-page-header p {
+  margin: 0;
+  color: #7b8798;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.application-refresh-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 15px;
+  border: 1px solid #dce3ec;
+  border-radius: 9px;
+  background: #fff;
+  color: #334155;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.application-refresh-btn:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.application-info-banner,
+.application-success-message,
+.application-error-message {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding: 15px 17px;
+  border-radius: 10px;
+}
+
+.application-info-banner {
+  border: 1px solid #f2dfb4;
+  background: #fffbef;
+  color: #946515;
+}
+
+.application-info-banner p {
+  margin: 5px 0 0;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.application-success-message {
+  align-items: center;
+  border: 1px solid #bde8ce;
+  background: #effaf3;
+  color: #187443;
+  font-size: 13px;
+}
+
+.application-error-message {
+  align-items: center;
+  border: 1px solid #f1caca;
+  background: #fff3f3;
+  color: #b42323;
+  font-size: 13px;
+}
+
+.application-error-message span {
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+
+.application-error-message button {
+  border: 0;
+  background: transparent;
+  color: #a31f1f;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.application-review-card {
+  padding: 25px;
+  border: 1px solid #e5eaf1;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 5px 20px rgba(15, 23, 42, 0.035);
+}
+
+.application-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.application-pending-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 10px;
+  border-radius: 20px;
+  background: #fff5df;
+  color: #98630a;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.application-pending-badge span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #d99b22;
+}
+
+.application-card-header h2 {
+  margin: 14px 0 7px;
+  font-size: 23px;
+  overflow-wrap: anywhere;
+}
+
+.application-card-header p {
+  margin: 0;
+  color: #8491a3;
+  font-size: 12px;
+}
+
+.application-business-icon {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #edf2ff;
+  color: #345bd0;
+}
+
+
+.application-business-image {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  max-height: 240px;
+  object-fit: contain;
+  margin: 20px 0;
+  border-radius: 12px;
+}
+
+
+.application-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid #edf0f5;
+  border-left: 1px solid #edf0f5;
+}
+
+.application-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 9px;
+  min-width: 0;
+  padding: 17px;
+  border-right: 1px solid #edf0f5;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.application-detail > span {
+  color: #8290a2;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.application-detail strong {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  color: #28364a;
+  font-size: 13px;
+  font-weight: 650;
+  overflow-wrap: anywhere;
+}
+
+.application-detail strong svg {
+  flex-shrink: 0;
+  color: #7d8ca1;
+}
+
+.application-detail.full-width {
+  grid-column: 1 / -1;
+}
+
+.application-detail .application-id {
+  font-size: 11px;
+  font-weight: 500;
+  word-break: break-all;
+}
+
+.application-document-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #dce6fb;
+  border-radius: 10px;
+  background: #f5f8ff;
+  color: #3d5eaa;
+}
+
+.application-document-note strong {
+  font-size: 12px;
+}
+
+.application-document-note p {
+  margin: 5px 0 0;
+  color: #72809a;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.application-actions {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #edf0f5;
+}
+
+.application-actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 43px;
+  padding: 11px 16px;
+  border-radius: 9px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.application-actions button:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.application-actions button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.application-reject-btn {
+  border: 1px solid #f0caca;
+  background: #fff;
+  color: #bd3737;
+}
+
+.application-approve-btn {
+  border: 1px solid #19834c;
+  background: #19834c;
+  color: #fff;
+}
+
+.application-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 270px;
+  padding: 30px;
+  border: 1px solid #e6ebf2;
+  border-radius: 14px;
+  background: #fff;
+  color: #8290a2;
+  text-align: center;
+}
+
+.application-empty-state h2 {
+  margin: 0;
+  color: #253247;
+  font-size: 18px;
+}
+
+.application-empty-state p {
+  max-width: 400px;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.application-empty-state button {
+  margin-top: 7px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #315bd6;
+  color: white;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.application-spin {
+  animation: application-spin-animation 1s linear infinite;
+}
+
+@keyframes application-spin-animation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 650px) {
+  .application-page-header {
+    align-items: flex-start;
+  }
+
+  .application-page-header p {
+    max-width: 250px;
+  }
+
+  .application-refresh-btn {
+    padding: 10px;
+    font-size: 11px;
+  }
+
+  .application-review-card {
+    padding: 16px;
+  }
+
+  .application-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .application-detail.full-width {
+    grid-column: auto;
+  }
+
+  .application-actions {
+    flex-direction: column-reverse;
+  }
+
+  .application-actions button {
+    width: 100%;
+  }
+}

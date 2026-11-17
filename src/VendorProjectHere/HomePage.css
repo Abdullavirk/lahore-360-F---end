@@ -1,0 +1,260 @@
+.header-part {
+  min-height: 320px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 60px 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff8f4 0%,
+      #fdf0e9 45%,
+      #713c3c 140%
+    );
+
+  text-align: center;
+
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* Decorative circles */
+
+.header-part::before {
+  content: "";
+  position: relative;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: rgba(165, 53, 5, 0.08);
+  top: -200px;
+  left: -180px;
+}
+
+
+.header-part::after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: rgba(113, 60, 60, 0.08);
+  bottom: -200px;
+  right: -100px;
+}
+
+
+/* Content */
+
+.header-content {
+  max-width: 850px;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+
+/* Badge */
+
+.header-badge {
+  display: inline-block;
+
+  padding: 8px 18px;
+
+  margin-bottom: 18px;
+
+  border-radius: 30px;
+
+  background: #ffffff;
+
+  color: #a53505;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.5px;
+
+  box-shadow:
+    0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Heading */
+
+.header-content h1 {
+  margin: 0 0 20px;
+
+  font-size: 48px;
+
+  line-height: 1.15;
+
+  font-weight: 800;
+
+  color: #713c3c;
+
+  text-shadow:
+    2px 3px 6px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Main paragraph */
+
+.header-content p {
+  max-width: 750px;
+
+  margin: 0 auto;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+
+  color: #555;
+}
+
+
+/* Last paragraph */
+
+.header-content .header-subtext {
+  margin-top: 12px;
+
+  font-weight: 600;
+
+  color: #713c3c;
+}
+
+
+
+
+.categories-section {
+  text-align: center;
+
+  padding: 55px 7%;
+}
+
+.categories-section h2 {
+  font-size: 28px;
+
+  margin-bottom: 35px;
+
+  color: #222;
+}
+
+
+/* Category Container */
+
+.category-container {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+/* Category Card */
+
+.category-card {
+  width: 250px;
+  min-height: 220px;
+  text-decoration: none;
+  color: #222;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.02),
+    rgba(0, 0, 0, 0.15)
+  );
+  border: 1px solid #eeeeee;
+  border-radius: 16px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+
+/* Card Hover */
+
+.category-card:hover {
+  transform: translateY(-8px);
+  border-color: #f26b38;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.10);
+}
+
+
+/* Icon */
+
+.category-icon {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #fff1eb;
+  font-size: 38px;
+  margin-bottom: 18px;
+}
+
+
+/* Card Heading */
+
+.category-card h3 {
+  margin: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+
+/* Card Description */
+
+.category-card p {
+  margin-top: 9px;
+  margin-bottom: 0;
+  color: #888;
+  font-size: 14px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .header-part {
+    min-height: 380px;
+
+    padding: 45px 20px;
+  }
+
+  .header-content h1 {
+    font-size: 36px;
+  }
+
+  .header-content p {
+    font-size: 15px;
+
+    line-height: 1.7;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .header-content h1 {
+    font-size: 30px;
+  }
+
+  .header-badge {
+    font-size: 12px;
+  }
+
+}
